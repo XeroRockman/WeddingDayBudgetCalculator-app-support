@@ -3,70 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support | Wedding Budget Calculator</title>
+    <title>Support | Wedding Day Budget Calculator</title>
     <style>
-        /* Modern, premium dark theme */
+        /* Based on your App UI Colors */
+        :root {
+            --beige: #e9e4d9;
+            --black: #1a1a1a;
+            --white: #ffffff;
+            --gold-text: #b89664; /* Matching the "Welcome" text in your screenshot */
+        }
+
         body { 
-            background-color: #000000; 
-            color: #FFFFFF; /* White text */
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            background-color: var(--beige); 
+            color: var(--black);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif; 
             line-height: 1.6; 
             padding: 40px 20px; 
-            max-width: 600px; 
+            max-width: 500px; 
             margin: auto; 
-            text-align: center;
         }
 
-        /* Gold accents */
-        h1, h2, h3 { 
-            color: #D4AF37; /* Metallic Gold */
-            letter-spacing: 1px;
-            text-transform: uppercase;
+        /* Logo Styling */
+        .logo-container {
+            margin-bottom: 20px;
+            text-align: left;
         }
 
+        .logo-img {
+            height: 50px; /* Adjust based on your logo shape */
+            width: auto;
+        }
+
+        h1 { 
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 5px;
+            letter-spacing: -1px;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            opacity: 0.8;
+        }
+
+        /* Black "Input-Style" Card from your UI */
         .contact-box { 
-            background: #1a1a1a; 
-            padding: 30px; 
-            border-radius: 12px; 
-            border: 1px solid #D4AF37; /* Gold border */
+            background: var(--black); 
+            color: var(--white);
+            padding: 25px; 
+            border-radius: 20px; 
             margin-top: 30px;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
-        a { 
-            color: #D4AF37; 
+        .contact-box h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .contact-box p {
+            font-size: 0.95rem;
+            color: #ccc;
+        }
+
+        .email-link { 
+            display: block;
+            margin-top: 20px;
+            color: var(--white); 
             text-decoration: none; 
-            font-weight: bold; 
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.3s;
+            font-weight: 600;
+            font-size: 1.1rem;
+            word-break: break-all;
         }
 
-        a:hover { 
-            border-bottom: 1px solid #D4AF37; 
+        .email-link:hover {
+            color: var(--gold-text);
         }
 
         footer {
-            margin-top: 50px;
-            font-size: 0.8em;
-            color: #888;
+            margin-top: 60px;
+            font-size: 0.8rem;
+            color: rgba(0,0,0,0.5);
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <h1>Wedding Budget Calculator</h1>
-    <p>Premium financial planning for your most important day.</p>
+    <div class="logo-container">
+        <span style="font-size: 2rem; font-weight: bold; border-bottom: 4px solid black;">W</span>
+    </div>
+
+    <h1>Wedding Day Budget Calculator</h1>
+    <p class="subtitle">Premium financial planning for your special day.</p>
     
     <div class="contact-box">
         <h3>Support & Feedback</h3>
-        <p>Need help with your budget, or found a bug? We are here to help make your wedding planning seamless.</p>
-        <p>Reach out to us via email:</p>
-        <p style="font-size: 1.2em;">
-            <a href="mailto:carson@weddingvenuesofficial.com">carson@weddingvenuesofficial.com</a>
-        </p>
+        <p>Need help with your budget, found a bug, or just want to say hello? Whatever it is, we would love to hear from you!</p>
+        
+        <a href="mailto:carson@weddingvenuesofficial.com" class="email-link">
+            carson@weddingvenuesofficial.com
+        </a>
     </div>
 
     <footer>
-        <p>&copy; 2026 Wedding Budget Calculator. All rights reserved.</p>
+        <p>&copy; 2026 Wedding Day Budget Calculator. All rights reserved.</p>
     </footer>
 
 </body>
